@@ -17,20 +17,24 @@ html, body {
     grid-gap: 10px;
     justify-content: space-around;
     margin-bottom:10px;
-    background-color: red;
 }
 .column, .columns {
     display: inherit;
     grid-gap: inherit;
-    padding: 10px;
     background-color: white;
 }
+.container > .row > .column {
+    padding: 10px;
+}
 
+.container > .row > .columns {
+    padding: 10px;
+}
 .column, .columns .row {
     margin-bottom: 0px;
 }
 .blue {
-    background-color: blue;
+    background-color: rgb(67, 196, 255);
     
 }
 
