@@ -24,11 +24,9 @@ html, body {
     background-color: white;
 }
 .container > .row > .column {
-    padding: 10px;
 }
 
 .container > .row > .columns {
-    padding: 10px;
 }
 .column, .columns .row {
     margin-bottom: 0px;
