@@ -2,25 +2,36 @@ html, body {
     background-color: #eee;
 }
 .container{
-    display: grid;
     position: relative;
-    grid-template-columns: repeat(12, 1fr);    
-    grid-gap: 10px;
     width: 70%;
     max-width: 1560px;
     margin: 0 auto;
     margin-top:10px;
-    justify-content: space-around;
+
 }
+
 .row{
     width: 100%;
-    clear:both;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);    
+    grid-gap: 10px;
+    justify-content: space-around;
+    margin-bottom:10px;
+    background-color: red;
 }
 .column, .columns {
     display: inherit;
     grid-gap: inherit;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
+}
+
+.column, .columns .row {
+    margin-bottom: 0px;
+}
+.blue {
+    background-color: blue;
+    
 }
 
 
