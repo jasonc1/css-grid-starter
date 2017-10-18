@@ -1,5 +1,8 @@
 html, body {
     background-color: #eee;
+    direction:ltr;
+    text-align:justify;
+    font-size: 10pt;
 }
 .container{
     position: relative;
@@ -23,11 +26,13 @@ html, body {
     grid-gap: inherit;
     background-color: white;
 }
-.container > .row > .column {
+/* .container > .row > .column {
+    padding: 10px;
 }
 
 .container > .row > .columns {
-}
+    padding: 10px;
+} */
 .column, .columns .row {
     margin-bottom: 0px;
 }
