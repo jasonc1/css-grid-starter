@@ -9,6 +9,7 @@ html, body {
     width: 70%;
     max-width: 1560px;
     margin: 0 auto;
+    margin-top:10px;
     justify-content: space-around;
 }
 .row{
