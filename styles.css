@@ -1,46 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     background-color: #eee;
     direction:ltr;
     text-align:justify;
-    font-size: 10pt;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    margin: 0px;
+    word-break: break-word;
 }
+
 .container{
     position: relative;
-    width: 70%;
-    max-width: 1560px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    margin-top:10px;
-
+    margin-top:0px;
 }
 
 .row{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);    
-    grid-gap: 10px;
+    grid-gap: 24px;
     justify-content: space-around;
-    margin-bottom:10px;
+    /* ====== delete this ======*/
+    margin-bottom: 16px;
+    /* ====== end delete ======*/
+
 }
-.column, .columns {
+.col, .cols {
     display: inherit;
     grid-gap: inherit;
     background-color: white;
+    grid-template-columns: subgrid;
 }
-/* .container > .row > .column {
-    padding: 10px;
-}
-
-.container > .row > .columns {
-    padding: 10px;
-} */
-.column, .columns .row {
-    margin-bottom: 0px;
-}
-.blue {
-    background-color: rgb(67, 196, 255);
-    
-}
-
 
 .two{
     grid-column: auto / span 2
@@ -75,14 +73,18 @@ html, body {
 .twelve{
     grid-column: auto / span 12
 }
-@media only screen and (max-width: 1100px) {
-    .container{
-        width: 85%;
+
+
+@media only screen and (max-width: 550px) {
+    .row {
+        grid-gap: 0px;
+    }
+    .col, .cols {
+        grid-column-end: span 12;
     }
 }
 
-@media only screen and (max-width: 550px) {
-    .column, .columns {
-       grid-column-end: span 12;
-    }
+/*====== DEMO RELATED - can delete ======*/
+.blue {
+    background-color: rgb(67, 196, 255);
 }
